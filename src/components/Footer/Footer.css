@@ -1,0 +1,5 @@
+.footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    min-height: 50px;
+}

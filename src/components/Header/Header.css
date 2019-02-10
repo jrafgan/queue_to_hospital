@@ -1,0 +1,5 @@
+.header {
+    display: grid;
+    grid-template-columns: 100px auto;
+    min-height: 70px;
+}

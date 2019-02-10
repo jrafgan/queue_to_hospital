@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.logo,
+.make_an_appointment,
+.left_side_bar,
+.middle_bar,
+.right_side_bar,
+.left_footer,
+.right_footer {
+  border: 1px solid blue;
+}
