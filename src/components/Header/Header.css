@@ -3,3 +3,8 @@
     grid-template-columns: 100px auto;
     min-height: 70px;
 }
+
+.gerb {
+    height: 70px;
+    width: auto;
+}

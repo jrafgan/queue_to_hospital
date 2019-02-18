@@ -1,26 +1,39 @@
 import React from 'react';
+import {connect} from "react-redux";
 
 const MiddleBar = (props) => {
-    if (props.flag !== null)console.log(Object.values(props.docs));
+    if (props.doctorName.hospitalInfo !== null)console.log(Object.keys(props.doctorName.doctorInfo));
     return (
         <div className='middle_bar'>
             <p>Врачи :</p>
-            {props.flag !== null ? <ul>
-                {Object.values(props.docs).map((item, index)=>{
+            <ul>
+            {props.doctorName.hospitalInfo !== null ? Object.values(props.doctorName.doctorInfo).map((item, index)=>{
+                const keysArr = Object.keys(props.doctorName.doctorInfo);
+                return index === 0 ? <p key={index}>{item}</p> : <li key={index} id={keysArr[index]} onClick={e=>props.showSchedule(e)}>{item}</li>
+            }) : null}
+            </ul>
+            <div className="schedule">
+                <ul>
+                {props.doctorName.doctorSchedule ? props.doctorName.doctorSchedule.map((item, index)=>{
+                    return <li key={index}>{item}</li>
+                }) : null}
+                </ul>
+            </div>
 
-
-
-                   return <li key={index}><ul className='ul'>{Array.isArray(item) ? item.map((item2, index)=>{if (index === 0) {
-                       return <li className='show' onClick={props.onClick}>{item2}</li>
-                   } else {
-                       return <li className='hide'>{item2}</li>
-                   }
-                   }) : null}</ul></li>
-                })
-                }
-                </ul> : null}
         </div>
     );
 };
 
-export default MiddleBar;
+const mapStateToProps = state => {
+    return {
+        doctorName: state,
+    }
+};
+
+const mapDispatchToProps = dispatch => {
+    return {
+        showSchedule: (e)=>dispatch({type: 'SHOW_SCHEDULE', value: e.currentTarget.id}),
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(MiddleBar);

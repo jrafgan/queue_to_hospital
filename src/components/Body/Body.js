@@ -4,11 +4,11 @@ import MiddleBar from "./MiddleBar/MiddleBar";
 import RightSideBar from "./RightSideBar/RightSideBar";
 import './Body.css'
 
-const Body = () => {
+const Body = (props) => {
     return (
         <div className='body'>
-            <LeftSideBar/>
-            <MiddleBar/>
+            <LeftSideBar />
+            <MiddleBar />
             <RightSideBar/>
         </div>
     );

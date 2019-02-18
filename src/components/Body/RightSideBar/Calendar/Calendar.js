@@ -12,6 +12,8 @@ import {connect} from "react-redux";
 const Calendar = (props) => {
         return (
             <DayPickerInput
+                required
+                value='Выберите число'
                 formatDate={formatDate}
                 parseDate={parseDate}
                 format="LL"
@@ -24,16 +26,10 @@ const Calendar = (props) => {
         )
 };
 
-const mapStateToProps = state => {
-    return {
-        ctr: state,
-    }
-};
-
 const mapDispatchToProps = dispatch => {
     return {
         dateChange: (e) => dispatch({type: 'SET_DATE', value: `${formatDate(e, 'LL', 'ru')}`}),
     }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Calendar);
+export default connect(null, mapDispatchToProps)(Calendar);

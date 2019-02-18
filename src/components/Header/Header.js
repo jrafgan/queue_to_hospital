@@ -3,11 +3,11 @@ import Logo from "./Logo/Logo";
 import MakeAnAppointment from "./MakeAnAppointment/MakeAnAppointment";
 import './Header.css'
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div className='header'>
-           <Logo/>
-           <MakeAnAppointment/>
+            <Logo/>
+            <MakeAnAppointment onChange={props.onChange}/>
         </div>
     );
 };
