@@ -1,5 +1,15 @@
 import {DOCTORS, HOSPITALS, SCHEDULE} from "../Constants";
-import axios from "../axios_url";
+import {
+    FETCH_ERROR,
+    FETCH_POST,
+    FETCH_REQUEST,
+    FETCH_SUCCESS,
+    GET_HOSPITAL,
+    GET_USER_DATA,
+    SET_DATE, SHOW_SCHEDULE,
+    SUBMIT_DATA
+} from "./actions";
+
 
 const initialState = {
     hospitalInfo: null,
@@ -7,44 +17,67 @@ const initialState = {
     doctorSchedule: null,
     docName: null,
     set_date: '',
+    set_time: '',
     first_name: '',
     last_name: '',
     year_of_birth: '',
     show_ticket: false,
     ticket_id: '',
-
+    showSpinner: false,
 };
 
 const reducer = (state = initialState, action) => {
 
     switch (action.type) {
 
-        case 'GET_HOSPITAL':
+        case FETCH_REQUEST:
+            return {
+                ...state,
+                showSpinner: true,
+            };
+
+        case FETCH_SUCCESS:
+            console.log(action.id);
+            return {
+                ...state,
+                showSpinner: false,
+                ticket_id: action.id,
+            };
+
+        case FETCH_POST:
+            return {
+                ...state,
+                showSpinner: false,
+            };
+
+        case FETCH_ERROR:
+            return {
+                ...state,
+                showSpinner: false,
+            };
+
+        case GET_HOSPITAL:
             const street = action.value;
             const index = HOSPITALS.findIndex(item => item.street === street);
-            console.log('Hospitals index', HOSPITALS[index]);
-            console.log('Doctors index', DOCTORS[index]);
-            console.log('this.state', state.hospitalInfo);
             return {
                 ...state,
                 hospitalInfo: HOSPITALS[index], doctorInfo: DOCTORS[index]
             };
 
-        case 'SHOW_SCHEDULE':
+        case SHOW_SCHEDULE:
             const id = action.value;
             const index2 = SCHEDULE.findIndex(item => Object.keys(item)[0] === id);
             const docSchedule = Object.values(SCHEDULE[index2])[0];
             const docName = docSchedule[0];
             console.log(docName);
             console.log(action.value);
-            //state.doctorSchedule = docSchedule;
             return {
                 ...state,
                 doctorSchedule: docSchedule,
                 docName: docName,
             };
 
-        case 'SET_DATE':
+        case SET_DATE:
             const date = action.value;
             console.log(date);
             return {
@@ -52,34 +85,21 @@ const reducer = (state = initialState, action) => {
                 set_date: date,
             };
 
-        case 'GET_USER_DATA':
-            const {name, value} = action.value;
+        case GET_USER_DATA:
+            console.log(action.data);
+            const {name, value} = action.data;
             return {
                 ...state,
                 [name]: value
             };
 
 
-        case 'SUBMIT_DATA':
-            action.value.preventDefault();
-            const userData = {
-                hospitalInfo: [state.hospitalInfo.name, state.hospitalInfo.street],
-                doctorName: state.docName,
-                date: state.set_date,
-                first_name: state.first_name,
-                last_name: state.last_name,
-                year_of_birth: state.year_of_birth
-            };
-            console.log(userData);
-            axios.post('queueToHospital.json', userData).then(response => {
-                state.ticket_id = response.data.name;
-                console.log(state);
-            });
-
+        case SUBMIT_DATA:
             return {
                 ...state,
                 show_ticket: true
             };
+
 
         default:
             return {...state};
