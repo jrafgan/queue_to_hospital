@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from "react-redux";
+import {checkInApi} from "../../../Store/actions";
 
 const MiddleBar = (props) => {
     if (props.doctorName.hospitalInfo !== null)console.log(Object.keys(props.doctorName.doctorInfo));
@@ -32,7 +33,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        showSchedule: (e)=>dispatch({type: 'SHOW_SCHEDULE', value: e.currentTarget.id}),
+        showSchedule: (e)=>dispatch(checkInApi(e.currentTarget.id)),
     }
 };
 

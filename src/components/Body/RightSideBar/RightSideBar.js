@@ -27,8 +27,8 @@ const RightSideBar = (props) => {
         <div className="table">
             {props.doctorName !== null ? TIME.map((item, index) => {
                 return <div className="time_table" key={index}>
-                        <input className="time" type="text" name="set_time" value={item} onClick={props.getUserData} />
-                    <div className="user_name">UserName</div>
+                        <input className="time" type="text" name="set_time" readOnly={item} value={item} onClick={props.getUserData} />
+                    <div className="user_name">{props.response !== null && props.response.time === item ? props.response.last_name + ' ' + props.response.first_name + ' ' + props.response.year_of_birth : 'Свободно'}</div>
                 </div>
             }) : null}
         </div>
@@ -55,6 +55,7 @@ const mapStateToProps = state => {
         hospitalInfo: state.hospitalInfo,
         date: state.set_date,
         time: state.set_time,
+        response: state.response_data,
     }
 };
 

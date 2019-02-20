@@ -8,11 +8,11 @@ import MomentLocaleUtils, {
 } from 'react-day-picker/moment';
 import 'moment/locale/ru';
 import {connect} from "react-redux";
+import {checkDate, setDate} from "../../../../Store/actions";
 
 const Calendar = (props) => {
         return (
             <DayPickerInput
-                required
                 value='Выберите число'
                 formatDate={formatDate}
                 parseDate={parseDate}
@@ -28,7 +28,10 @@ const Calendar = (props) => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        dateChange: (e) => dispatch({type: 'SET_DATE', value: `${formatDate(e, 'LL', 'ru')}`}),
+        dateChange: (e) => {
+            dispatch(setDate(`${formatDate(e, 'LL', 'ru')}`));
+            dispatch(checkDate());
+        },
     }
 };
 

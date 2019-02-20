@@ -5,9 +5,6 @@ import Body from "../components/Body/Body";
 import Footer from "../components/Footer/Footer";
 
 class App extends Component {
-componentDidUpdate() {
-    console.log('Did mount working')
-}
 
     render() {
 
