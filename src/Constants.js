@@ -619,7 +619,7 @@ export const DOCTORS = [
         oculist_hos1: 'Окулист',
         otolaryngologist_hos1: 'Лор',
         cardiologist_hos1: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos1: 'Гастроэнтеролог',
         allergist_hos1: 'Аллерголог'
     },
     {
@@ -630,7 +630,7 @@ export const DOCTORS = [
         oculist_hos2: 'Окулист',
         otolaryngologist_hos2: 'Лор',
         cardiologist_hos2: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos2: 'Гастроэнтеролог',
         allergist_hos2: 'Аллерголог'
     },
     {
@@ -641,7 +641,7 @@ export const DOCTORS = [
         oculist_hos3: 'Окулист',
         otolaryngologist_hos3: 'Лор',
         cardiologist_hos3: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos3: 'Гастроэнтеролог',
         allergist_hos3: 'Аллерголог'
     },
     {
@@ -652,7 +652,7 @@ export const DOCTORS = [
         oculist_hos4: 'Окулист',
         otolaryngologist_hos4: 'Лор',
         cardiologist_hos4: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos4: 'Гастроэнтеролог',
         allergist_hos4: 'Аллерголог'
     },
     {
@@ -663,7 +663,7 @@ export const DOCTORS = [
         oculist_hos5: 'Окулист',
         otolaryngologist_hos5: 'Лор',
         cardiologist_hos5: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos5: 'Гастроэнтеролог',
         allergist_hos5: 'Аллерголог'
     },
     {
@@ -674,7 +674,7 @@ export const DOCTORS = [
         oculist_hos6: 'Окулист',
         otolaryngologist_hos6: 'Лор',
         cardiologist_hos6: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos6: 'Гастроэнтеролог',
         allergist_hos6: 'Аллерголог'
     },
     {
@@ -685,7 +685,7 @@ export const DOCTORS = [
         oculist_hos7: 'Окулист',
         otolaryngologist_hos7: 'Лор',
         cardiologist_hos7: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos7: 'Гастроэнтеролог',
         allergist_hos7: 'Аллерголог'
     },
     {
@@ -696,7 +696,7 @@ export const DOCTORS = [
         oculist_hos8: 'Окулист',
         otolaryngologist_hos8: 'Лор',
         cardiologist_hos8: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos8: 'Гастроэнтеролог',
         allergist_hos8: 'Аллерголог'
     },
     {
@@ -707,7 +707,7 @@ export const DOCTORS = [
         oculist_hos9: 'Окулист',
         otolaryngologist_hos9: 'Лор',
         cardiologist_hos9: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos9: 'Гастроэнтеролог',
         allergist_hos9: 'Аллерголог'
     },
     {
@@ -717,7 +717,7 @@ export const DOCTORS = [
         neurologist_hos10: 'Невролог', oculist_hos10: 'Окулист',
         otolaryngologist_hos10: 'Лор',
         cardiologist_hos10: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos10: 'Гастроэнтеролог',
         allergist_hos10: 'Аллерголог'
     },
     {
@@ -728,7 +728,7 @@ export const DOCTORS = [
         oculist_hos11: 'Окулист',
         otolaryngologist_hos11: 'Лор',
         cardiologist_hos11: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos11: 'Гастроэнтеролог',
         allergist_hos11: 'Аллерголог'
     },
     {
@@ -739,7 +739,7 @@ export const DOCTORS = [
         oculist_hos12: 'Окулист',
         otolaryngologist_hos12: 'Лор',
         cardiologist_hos12: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos12: 'Гастроэнтеролог',
         allergist_hos12: 'Аллерголог'
     },
     {
@@ -750,7 +750,7 @@ export const DOCTORS = [
         oculist_hos13: 'Окулист',
         otolaryngologist_hos13: 'Лор',
         cardiologist_hos13: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos13: 'Гастроэнтеролог',
         allergist_hos13: 'Аллерголог'
     },
     {
@@ -761,7 +761,7 @@ export const DOCTORS = [
         oculist_hos14: 'Окулист',
         otolaryngologist_hos14: 'Лор',
         cardiologist_hos14: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos14: 'Гастроэнтеролог',
         allergist_hos14: 'Аллерголог'
     },
     {
@@ -772,7 +772,7 @@ export const DOCTORS = [
         oculist_hos15: 'Окулист',
         otolaryngologist_hos15: 'Лор',
         cardiologist_hos15: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos15: 'Гастроэнтеролог',
         allergist_hos15: 'Аллерголог'
     },
     {
@@ -783,7 +783,7 @@ export const DOCTORS = [
         oculist_hos16: 'Окулист',
         otolaryngologist_hos16: 'Лор',
         cardiologist_hos16: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos16: 'Гастроэнтеролог',
         allergist_hos16: 'Аллерголог'
     },
     {
@@ -794,7 +794,7 @@ export const DOCTORS = [
         oculist_hos17: 'Окулист',
         otolaryngologist_hos17: 'Лор',
         cardiologist_hos17: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos17: 'Гастроэнтеролог',
         allergist_hos17: 'Аллерголог'
     },
     {
@@ -805,7 +805,7 @@ export const DOCTORS = [
         oculist_hos18: 'Окулист',
         otolaryngologist_hos18: 'Лор',
         cardiologist_hos18: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_18: 'Гастроэнтеролог',
         allergist_hos18: 'Аллерголог'
     },
     {
@@ -816,7 +816,7 @@ export const DOCTORS = [
         oculist_hos19: 'Окулист',
         otolaryngologist_hos19: 'Лор',
         cardiologist_hos19: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos19: 'Гастроэнтеролог',
         allergist_hos19: 'Аллерголог'
     },
     {
@@ -827,7 +827,7 @@ export const DOCTORS = [
         oculist_hos20: 'Окулист',
         otolaryngologist_hos20: 'Лор',
         cardiologist_hos20: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos20: 'Гастроэнтеролог',
         allergist_hos20: 'Аллерголог'
     },
     {
@@ -838,7 +838,7 @@ export const DOCTORS = [
         oculist_hos21: 'Окулист',
         otolaryngologist_hos21: 'Лор',
         cardiologist_hos21: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos21: 'Гастроэнтеролог',
         allergist_hos21: 'Аллерголог'
     },
     {
@@ -849,7 +849,7 @@ export const DOCTORS = [
         oculist_hos22: 'Окулист',
         otolaryngologist_hos22: 'Лор',
         cardiologist_hos22: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos22: 'Гастроэнтеролог',
         allergist_hos22: 'Аллерголог'
     },
     {
@@ -860,7 +860,7 @@ export const DOCTORS = [
         oculist_hos23: 'Окулист',
         otolaryngologist_hos23: 'Лор',
         cardiologist_hos23: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos23: 'Гастроэнтеролог',
         allergist_hos23: 'Аллерголог'
     },
     {
@@ -871,7 +871,7 @@ export const DOCTORS = [
         oculist_hos24: 'Окулист',
         otolaryngologist_hos24: 'Лор',
         cardiologist_hos24: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos24: 'Гастроэнтеролог',
         allergist_hos24: 'Аллерголог'
     },
     {
@@ -882,7 +882,7 @@ export const DOCTORS = [
         oculist_hos25: 'Окулист',
         otolaryngologist_hos25: 'Лор',
         cardiologist_hos25: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos25: 'Гастроэнтеролог',
         allergist_hos25: 'Аллерголог'
     },
     {
@@ -893,7 +893,7 @@ export const DOCTORS = [
         oculist_hos26: 'Окулист',
         otolaryngologist_hos26: 'Лор',
         cardiologist_hos26: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos26: 'Гастроэнтеролог',
         allergist_hos26: 'Аллерголог'
     },
     {
@@ -904,7 +904,7 @@ export const DOCTORS = [
         oculist_hos27: 'Окулист',
         otolaryngologist_hos27: 'Лор',
         cardiologist_hos27: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos27: 'Гастроэнтеролог',
         allergist_hos27: 'Аллерголог'
     },
     {
@@ -915,7 +915,7 @@ export const DOCTORS = [
         oculist_hos28: 'Окулист',
         otolaryngologist_hos28: 'Лор',
         cardiologist_hos28: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos28: 'Гастроэнтеролог',
         allergist_hos28: 'Аллерголог'
     },
     {
@@ -926,7 +926,7 @@ export const DOCTORS = [
         oculist_hos29: 'Окулист',
         otolaryngologist_hos29: 'Лор',
         cardiologist_hos29: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos29: 'Гастроэнтеролог',
         allergist_hos29: 'Аллерголог'
     },
     {
@@ -937,7 +937,7 @@ export const DOCTORS = [
         oculist_hos30: 'Окулист',
         otolaryngologist_hos30: 'Лор',
         cardiologist_hos30: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos30: 'Гастроэнтеролог',
         allergist_hos30: 'Аллерголог'
     },
     {
@@ -948,7 +948,7 @@ export const DOCTORS = [
         oculist_hos31: 'Окулист',
         otolaryngologist_hos31: 'Лор',
         cardiologist_hos31: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos31: 'Гастроэнтеролог',
         allergist_hos31: 'Аллерголог'
     },
     {
@@ -959,7 +959,7 @@ export const DOCTORS = [
         oculist_hos32: 'Окулист',
         otolaryngologist_hos32: 'Лор',
         cardiologist_hos32: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos32: 'Гастроэнтеролог',
         allergist_hos32: 'Аллерголог'
     },
     {
@@ -970,7 +970,7 @@ export const DOCTORS = [
         oculist_hos33: 'Окулист',
         otolaryngologist_hos33: 'Лор',
         cardiologist_hos33: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos33: 'Гастроэнтеролог',
         allergist_hos33: 'Аллерголог'
     },
     {
@@ -981,7 +981,7 @@ export const DOCTORS = [
         oculist_hos34: 'Окулист',
         otolaryngologist_hos34: 'Лор',
         cardiologist_hos34: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos34: 'Гастроэнтеролог',
         allergist_hos34: 'Аллерголог'
     },
     {
@@ -992,7 +992,7 @@ export const DOCTORS = [
         oculist_hos35: 'Окулист',
         otolaryngologist_hos35: 'Лор',
         cardiologist_hos35: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos35: 'Гастроэнтеролог',
         allergist_hos35: 'Аллерголог'
     },
     {
@@ -1003,7 +1003,7 @@ export const DOCTORS = [
         oculist_hos36: 'Окулист',
         otolaryngologist_hos36: 'Лор',
         cardiologist_hos36: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos36: 'Гастроэнтеролог',
         allergist_hos36: 'Аллерголог'
     },
     {
@@ -1014,7 +1014,7 @@ export const DOCTORS = [
         oculist_hos37: 'Окулист',
         otolaryngologist_hos37: 'Лор',
         cardiologist_hos37: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos37: 'Гастроэнтеролог',
         allergist_hos37: 'Аллерголог'
     },
     {
@@ -1025,7 +1025,7 @@ export const DOCTORS = [
         oculist_hos38: 'Окулист',
         otolaryngologist_hos38: 'Лор',
         cardiologist_hos38: 'Кардиолог',
-        gastroenterologist: 'Гастроэнтеролог',
+        gastroenterologist_hos38: 'Гастроэнтеролог',
         allergist_hos38: 'Аллерголог'
     }
 ];
