@@ -2,13 +2,16 @@ import React, {Fragment} from 'react';
 import Calendar from "./Calendar/Calendar";
 import {connect} from "react-redux";
 import {TIME} from '../../../Constants';
-import {postUserData, getUserData} from "../../../Store/actions";
+import {postUserData, getUserData, showTimeTable} from "../../../Store/actions";
 
 const RightSideBar = (props) => {
     console.log(props);
     return <div className='set_up_data'>
+
         {props.doctorName !== null ? <Fragment><Calendar/>
+
             <div className="doc_name"><p>{props.doctorName}</p></div>
+
             <form onSubmit={props.submitData}>
                 <input type="text" name="last_name" placeholder="Ваша Фамилия" onChange={props.getUserData}
                        value={props.userFirstName.first_name} required/>
@@ -25,8 +28,14 @@ const RightSideBar = (props) => {
         </Fragment> : <div><p>Выберите Врача</p></div>}
 
         <div className="table">
+            <p onClick={props.showTimeTable}>Выберите время</p>
+
+
+
             {props.doctorName !== null ? TIME.map((item, index) => {
+
                 return <div className="time_table" key={index}>
+
                         <input className="time" type="text" name="set_time" readOnly={item} value={item} onClick={props.getUserData} />
                     <div className="user_name">{props.response !== null && props.response.time === item ? props.response.last_name + ' ' + props.response.first_name + ' ' + props.response.year_of_birth : 'Свободно'}</div>
                 </div>
@@ -64,6 +73,7 @@ const mapDispatchToProps = dispatch => {
     return {
         getUserData: (e) => dispatch(getUserData(e.currentTarget)),
         submitData: (e) => dispatch(postUserData(e)),
+        showTimeTable: () => dispatch(showTimeTable()),
     }
 };
 
