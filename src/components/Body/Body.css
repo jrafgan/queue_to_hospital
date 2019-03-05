@@ -19,6 +19,13 @@
     display: none!important;
 }
 
+.table {
+    min-width: 180px;
+    width: 50%;
+    height: 210px;
+    overflow: auto;
+}
+
 .time_table {
     display: grid;
     grid-template-columns: 50px auto;
