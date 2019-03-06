@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, auto);
     min-height: 500px;
+    grid-column-gap: 15px;
 }
 
 .hide {
@@ -17,6 +18,15 @@
 
 .set_up_data {
     display: grid;
+    padding: 12px;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding-left: 0;
 }
 
 .react-datepicker__triangle {
@@ -29,8 +39,7 @@
 
 .table {
     display: grid;
-    min-width: 180px;
-    width: 50%;
+    width: 90%;
     height: 210px;
     overflow: auto;
     justify-self: center;
@@ -86,12 +95,14 @@
         display: grid;
         grid-template-columns: auto auto;
         min-height: fit-content;
+        grid-row-gap: 15px;
     }
 
     .set_up_data {
         display: grid;
         grid-column: 1 / span 2;
         place-self: center;
+        box-shadow: 4px 4px 2px 0 rgba(50, 50, 50, 0.75);
     }
 
 }

@@ -1,15 +1,23 @@
 .App {
   text-align: center;
+  display: grid;
+  grid-row-gap: 15px;
+  padding: 15px;
+  background: deepskyblue;
+  background: linear-gradient(to bottom, #87e0fd 0%,#05abe0 58%);
 }
 
 .logo,
 .make_an_appointment,
 .left_side_bar,
 .middle_bar,
-.right_side_bar,
+.set_up_data,
 .left_footer,
 .right_footer {
-  border: 1px solid blue;
+  border: 1px solid darkgrey;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px 0 rgba(50, 50, 50, 0.75);
+  background: white;
 }
 
 .info {
