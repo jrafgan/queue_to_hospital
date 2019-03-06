@@ -13,7 +13,7 @@ import {checkDate, setDate} from "../../../../Store/actions";
 const Calendar = (props) => {
         return (
             <DayPickerInput
-                value='Выберите число'
+                value='Выберите дату'
                 formatDate={formatDate}
                 parseDate={parseDate}
                 format="LL"

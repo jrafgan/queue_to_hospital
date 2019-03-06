@@ -6,7 +6,7 @@ import {
     FETCH_SUCCESS,
     GET_HOSPITAL,
     GET_USER_DATA,
-    SET_DATE, SET_RESPONSE_DATA, SHOW_SCHEDULE,
+    SET_DATE, SET_RESPONSE_DATA, SHOW_SCHEDULE, SHOW_TIME_TABLE,
     SUBMIT_DATA
 } from "./actions";
 
@@ -16,6 +16,7 @@ const initialState = {
     doctorInfo: null, //список врачей
     doctorSchedule: null, //раб. график выбранного врача
     docName: null, //имя врача
+    docSpecialist: null,
     docId: '', // ID врача
     set_date: '', //дата
     set_time: '', //время посещения
@@ -26,6 +27,7 @@ const initialState = {
     ticket_id: '', //ID записи на сервере
     showSpinner: false, // показать Спиннер
     response_data: null, //ответ с сревера при поиске
+    showTimeTable: false,
 };
 
 const reducer = (state = initialState, action) => {
@@ -39,7 +41,6 @@ const reducer = (state = initialState, action) => {
             };
 
         case FETCH_SUCCESS: //это все для спиннера
-            console.log(action.id);
             return {
                 ...state,
                 showSpinner: false,
@@ -72,6 +73,7 @@ const reducer = (state = initialState, action) => {
             const index2 = SCHEDULE.findIndex(item => Object.keys(item)[0] === id);
             console.log(id);
             const docSchedule = Object.values(SCHEDULE[index2])[0];
+            console.log(state.doctorInfo[id]);
             const docName = docSchedule[0];
             console.log(docName);
             return {
@@ -79,14 +81,13 @@ const reducer = (state = initialState, action) => {
                 doctorSchedule: docSchedule,
                 docName: docName,
                 docId: id,
+                docSpecialist: state.doctorInfo[id],
             };
 
         case SET_DATE: //выбранная дата посещения
-            const date = action.date;
-            console.log(date);
             return {
                 ...state,
-                set_date: date,
+                set_date: action.date,
             };
 
         case GET_USER_DATA: //получение инфы юзера
@@ -104,10 +105,15 @@ const reducer = (state = initialState, action) => {
             };
 
         case SET_RESPONSE_DATA: //сохранить response в state
-            const data = action.data;
             return {
                 ...state,
-                response_data: data
+                response_data: action.data
+            };
+
+        case SHOW_TIME_TABLE: //сохранить response в state
+            return {
+                ...state,
+                showTimeTable: true,
             };
 
         default:

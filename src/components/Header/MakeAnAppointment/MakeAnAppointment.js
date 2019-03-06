@@ -4,7 +4,7 @@ import {connect} from "react-redux";
 
 const MakeAnAppointment = (props) => {
     return (
-        <div className='make_an_appointment'><p>Найти больницу</p>
+        <div className='make_an_appointment'><p className='info'>Выберите Центр Семейной Медицины</p>
             <select id="select_hospital" name="select_hospital" onChange={e=>props.getHospital(e)}>
                 <option>Список ЦСМ города Бишкек</option>
                 {HOSPITALS.map((item, index)=>{

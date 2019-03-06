@@ -8,3 +8,19 @@
     height: 70px;
     width: auto;
 }
+
+#select_hospital {
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 460px){
+
+    .header {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        min-height: 70px;
+    }
+
+
+}

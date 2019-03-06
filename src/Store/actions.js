@@ -11,6 +11,7 @@ export const FETCH_REQUEST = 'FETCH_REQUEST';
 export const FETCH_SUCCESS = 'FETCH_SUCCESS';
 export const FETCH_POST = 'FETCH_POST';
 export const FETCH_ERROR = 'FETCH_ERROR';
+export const SHOW_TIME_TABLE = 'SHOW_TIME_TABLE';
 
 let RESPONSE_DATA = null;
 
@@ -38,8 +39,8 @@ export const fetchError = error => {
     return {type: FETCH_ERROR, error};
 };
 
-export const showSchedule = id => {
-    return {type: SHOW_SCHEDULE, id};
+export const showSchedule = (id, specialistName) => {
+    return {type: SHOW_SCHEDULE, id, specialistName};
 };
 
 export const setDate = date => {
@@ -48,6 +49,10 @@ export const setDate = date => {
 
 export const setResponseData = (data) => {
     return {type: SET_RESPONSE_DATA, data};
+};
+
+export const showTimeTable = () => {
+    return {type: SHOW_TIME_TABLE};
 };
 
 export const postUserData = (e) => { //отправка инфы на АПИ
@@ -78,7 +83,7 @@ export const postUserData = (e) => { //отправка инфы на АПИ
 
 export const checkInApi = (id) => { // поиск по ID врача на
 
-    return (dispatch, getState) => {
+    return (dispatch) => {
 
         console.log('checkInApi is working', id);
 

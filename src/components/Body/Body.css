@@ -15,23 +15,99 @@
     left: unset !important;
 }
 
+.set_up_data {
+    display: grid;
+}
+
 .react-datepicker__triangle {
     display: none!important;
 }
 
+.form {
+    display: grid;
+}
+
 .table {
+    display: grid;
     min-width: 180px;
     width: 50%;
     height: 210px;
     overflow: auto;
+    justify-self: center;
 }
 
 .time_table {
     display: grid;
-    grid-template-columns: 50px auto;
+    grid-template-columns: 60px auto;
 }
 
 .user_name {
     display: grid;
     place-content: center;
+}
+
+.submit_btn {
+    place-self: center;
+}
+
+.last_name_input,
+.first_name-Input,
+.year_of_birth_input,
+.table,
+.submit_btn {
+    margin: 5px 0;
+}
+
+.time:hover {
+    background: lime;
+    font-size: 20px;
+}
+
+.time:focus {
+    background: limegreen;
+}
+
+.time {
+    cursor: pointer;
+}
+
+.doc_name {
+    cursor: pointer;
+}
+
+.doc_name:hover {
+    background: deepskyblue;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 860px){
+
+    .body {
+        display: grid;
+        grid-template-columns: auto auto;
+        min-height: fit-content;
+    }
+
+    .set_up_data {
+        display: grid;
+        grid-column: 1 / span 2;
+        place-self: center;
+    }
+
+}
+
+@media screen and (max-width: 660px){
+
+    .body {
+        display: grid;
+        grid-template-columns: auto;
+        min-height: fit-content;
+    }
+
+    .set_up_data {
+        display: grid;
+        grid-column: 1 / 2;
+        place-self: normal;
+    }
+
 }
